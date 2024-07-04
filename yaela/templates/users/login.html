@@ -51,7 +51,7 @@
 		                <h1 class="h3">Account Login</h1>
 		                <p>Sign In to your account</p>
 		            </div>
-		            <form method= "post" action="index.html">
+		            <form method= "post" > <!-- action="index.html" -->
 						{% csrf_token %}
 		                <div class="form-group">
 		                    <input type="text" name = "username" class="form-control" placeholder="Username" autofocus="">
@@ -104,24 +104,16 @@
     <!--===================================================-->
     <!-- END OF CONTAINER -->
 
-
-        
     <!--JAVASCRIPT-->
     <!--=================================================-->
 
     <!--jQuery [ REQUIRED ]-->
     <script src="{% static 'js\jquery.min.js' %}"></script>
 
-
     <!--BootstrapJS [ RECOMMENDED ]-->
     <script src="{% static 'js\bootstrap.min.js' %}"></script>
-
-
     <!--NiftyJS [ RECOMMENDED ]-->
     <script src="{% static 'js\nifty.min.js' %}"></script>
-
-
-
 
     <!--=================================================-->
     
